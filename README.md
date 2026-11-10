@@ -8,7 +8,7 @@
 
 ## 시작하기
 
-1. Release에서 `PlanImageStudio-Setup-1.0.0-x64.exe`를 내려받아 설치합니다. Python을 별도로 설치할 필요가 없습니다.
+1. Release에서 `PlanImageStudio-Setup-1.0.1-x64.exe`를 내려받아 설치합니다. Python을 별도로 설치할 필요가 없습니다.
 2. VS Code의 OpenAI Codex 확장을 설치하고 ChatGPT 계정으로 로그인합니다. 앱의 로그인 버튼으로도 Codex OAuth를 시작할 수 있습니다.
 3. 이미지 또는 PDF 도면을 불러옵니다. PDF는 페이지를 선택합니다.
 4. 생성 유형을 고르고 추가 프롬프트를 입력합니다. 추가 프롬프트는 공란으로 두어도 됩니다.
@@ -18,10 +18,12 @@
 ## 주요 기능
 
 - PNG, JPG/JPEG, WEBP, BMP, TIFF 및 PDF 페이지 입력
-- 2D 평면도, 내부가 보이는 3D 조감도, 지붕과 외벽이 갖춰진 3D 완성 건물
+- 2D 평면도, 아파트 분양 안내용 3D 입체 평면도, 지붕과 외벽이 갖춰진 3D 완성 건물
 - 모드에 맞는 프롬프트 자동 완성 및 선택적인 추가 요청
 - 원본·결과 비교, 확대·이동, PNG/JPEG/WEBP 저장
 - 생성 기록 다시 열기와 작업 취소
+
+3D 조감도는 지붕·천장이 없는 모델을 대각선 위쪽에서 내려다보며, 밝은 원목 바닥·흰 벽·진한 벽 상단·흰 배경으로 표현합니다. 설명 문자, 치수, 지시선, 빨간 박스와 2D 도면 삽입은 기본 출력에서 제외합니다.
 
 ## 실행 환경
 
@@ -40,7 +42,7 @@
 Release의 `SHA256SUMS.txt`에서 설치 파일의 SHA-256을 확인할 수 있습니다.
 
 ```powershell
-Get-FileHash -Algorithm SHA256 .\PlanImageStudio-Setup-1.0.0-x64.exe
+Get-FileHash -Algorithm SHA256 .\PlanImageStudio-Setup-1.0.1-x64.exe
 ```
 
 설치 파일은 코드 서명되지 않았습니다. 자세한 설치 안내는 Release의 `INSTALL.txt`를 확인해 주세요.
